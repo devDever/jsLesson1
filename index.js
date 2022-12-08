@@ -122,12 +122,45 @@
 //     console.log('Равен');
 // }
 
-const button = document.querySelector('button');
+// const button = document.querySelector('.btn');
 
-function changeButtonColor() {
-    button.style.backgroundColor = '#000';
+// function changeButtonColor() {
+//     alert('Не нажимай больше');
+// }
+
+// button.addEventListener('click', function () {
+//     changeButtonColor();
+// })
+
+const arr = [];
+
+// const arrLength = arr.length;
+
+// if (arr.length >= 3) {
+//     console.log('ok');
+// } else {
+//     console.log('less than 3');
+// }
+
+if (arr.length) { // ! true
+    console.log('Не пусто');
+} else { // ! true
+    console.log('Пусто');
 }
 
-button.addEventListener('click', function () {
-    changeButtonColor();
-})
+// * сложение
+// * вычитание
+// * умножение
+// * деление
+
+// * создать 2 человека в виде объекта и при помощи оператора условия (if) проверить совподают ли у них хобби и возраст (добавть соответсвующие свойства age, hobby)
+
+const x = 1;
+const y = 1;
+let result = 0;
+
+function plus(x, y) {
+    console.log('result ', x + y);
+}
+
+plus(10, 5);
