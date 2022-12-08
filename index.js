@@ -83,11 +83,29 @@
 //     console.log('not banan');
 // }
 
-const x = 5;
-const y = 1;
+// const x = 5;
+// const y = 1;
 
-if (x != y) {
-    console.log('x != y');
+// if (x != y) {
+//     console.log('x != y');
+// } else {
+//     console.log('x == y');
+// }
+
+const personOne = {
+    name: 'Max',
+    age: 22
+}
+
+const personTwo = {
+    name: 'Jack',
+    age: 22
+}
+
+if (personOne.age == personTwo.age) {
+    console.log('Они ровестники');
 } else {
-    console.log('x == y');
+    console.log('Они не ровестники');
+    console.log(personOne.name + ': ' + personOne.age);
+    console.log(personTwo.name + ': ' + personTwo.age);
 }
