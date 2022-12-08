@@ -43,8 +43,10 @@
 // * > больше
 // * < меьше
 
-// * == равно
+// * == не строгое сравнение
+// * === строгое сравнение
 // * != не равно
+// * 
 
 
 
@@ -92,20 +94,40 @@
 //     console.log('x == y');
 // }
 
-const personOne = {
-    name: 'Max',
-    age: 22
+// const personOne = {
+//     name: 'Max',
+//     age: 22
+// }
+
+// const personTwo = {
+//     name: 'Jack',
+//     age: 22
+// }
+
+// if (personOne.age == personTwo.age) {
+//     console.log('Они ровестники');
+// } else {
+//     console.log('Они не ровестники');
+//     console.log(personOne.name + ': ' + personOne.age);
+//     console.log(personTwo.name + ': ' + personTwo.age);
+// }
+
+// const fruit = 'apple';
+// const fruitTwo = 'apple';
+
+// const numOne = 1; // number
+// const numTwo = '1'; // string
+
+// if (numOne === numTwo) {
+//     console.log('Равен');
+// }
+
+const button = document.querySelector('button');
+
+function changeButtonColor() {
+    button.style.backgroundColor = '#000';
 }
 
-const personTwo = {
-    name: 'Jack',
-    age: 22
-}
-
-if (personOne.age == personTwo.age) {
-    console.log('Они ровестники');
-} else {
-    console.log('Они не ровестники');
-    console.log(personOne.name + ': ' + personOne.age);
-    console.log(personTwo.name + ': ' + personTwo.age);
-}
+button.addEventListener('click', function () {
+    changeButtonColor();
+})
